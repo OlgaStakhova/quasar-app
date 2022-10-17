@@ -29,7 +29,6 @@
           <span class="q-ml-sm">{{ post.body }}</span>
         </q-card-section>
 
-        <!-- Notice v-close-popup -->
         <q-card-actions align="right">
           <q-btn
             flat
@@ -63,8 +62,8 @@ export default {
       .catch((error) => console.log(error, "error"));
   },
   methods: {
-    openPost(p) {
-      this.post = p;
+    openPost(post) {
+      this.post = post;
       this.dialog = true;
     },
   },

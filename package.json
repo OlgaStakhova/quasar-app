@@ -10,7 +10,8 @@
     "deploy": "push-dir --dir=dist/spa --remote=gh-pages --branch=master",
     "format": "prettier --write \"**/*.{js,vue,scss,html,md,json}\" --ignore-path .gitignore",
     "test": "echo \"No test specified\" && exit 0",
-    "build": "quasar build"
+    "build": "quasar build",
+    "serve": "quasar dev"
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",

@@ -28,8 +28,9 @@ import { ref } from "vue";
 export default defineComponent({
   name: "PageIndex",
   setup() {
+    const slide = ref(1);
     return {
-      slide: ref(1),
+      slide,
     };
   },
 });
