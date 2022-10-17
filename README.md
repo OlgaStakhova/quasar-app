@@ -2,6 +2,8 @@
 
 A Quasar Framework app
 
+Demo: <a href='https://euphonious-lokum-d6cde6.netlify.app/#/'> Link </a>
+
 ## Install the dependencies
 
 ```bash
@@ -13,25 +15,3 @@ npm install
 ```bash
 quasar dev
 ```
-
-### Lint the files
-
-```bash
-npm run lint
-```
-
-### Format the files
-
-```bash
-npm run format
-```
-
-### Build the app for production
-
-```bash
-quasar build
-```
-
-### Customize the configuration
-
-See [Configuring quasar.conf.js](https://quasar.dev/quasar-cli/quasar-conf-js).
