@@ -49,6 +49,11 @@ const linksList = [
     icon: "code",
     link: "/posts",
   },
+  {
+    title: "Users",
+    icon: "people",
+    link: "/users",
+  },
 ];
 
 import { defineComponent, ref } from "vue";

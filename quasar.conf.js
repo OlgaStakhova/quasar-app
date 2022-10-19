@@ -96,6 +96,9 @@ module.exports = configure(function (ctx) {
       // Quasar plugins
       plugins: [],
     },
+    sourceFiles: {
+      store: "src/stores/index",
+    },
 
     // animations: 'all', // --- includes all animations
     // https://quasar.dev/options/animations

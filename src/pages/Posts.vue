@@ -43,24 +43,29 @@
 </template>
 
 <script>
-import { api } from "boot/axios";
+import { computed } from "vue";
+import { usePostsStore } from "../stores/postsData.js";
+
 export default {
   name: "Posts",
   data() {
     return {
-      posts: [],
       dialog: false,
-      post: null,
     };
   },
-  created() {
-    api
-      .get("/posts")
-      .then((response) => {
-        this.posts = response.data;
-      })
-      .catch((error) => console.log(error, "error"));
+  setup() {
+    const store = usePostsStore();
+    const posts = computed(() => store.posts);
+    return {
+      posts,
+    };
   },
+
+  created() {
+    const store = usePostsStore();
+    store.getPostsData();
+  },
+
   methods: {
     openPost(post) {
       this.post = post;
